@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="demo/bootstrap.css">
+    <style>
+    html { font-size: 14px; }
+    #title { font-size: 1.3rem; }
+    .page-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; }
+    html, body {
+      height: 100%;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    body {
+      display: flex; 
+      flex-direction: column;
+    }
+    td{
+     float:left;
+    }
+    th{
+      width: 0px;
+    }
+    .wrapper {
+      flex-grow: 1;
+    }
+    .audio{
+      border-top:solid 1px rgb(223,226,230);
+      background-color: rgb(247,249,250);
+    }
+    #text{
+      text-align:left;
+      width: 99.3%;
+      margin:0 auto;}
+    </style> 
+    <title>Make an Arbitrary Song Curative</title>
+  </head>
+  
+  <body>
+    <nav class="navbar sticky-top navbar-expand navbar-light bg-light border-bottom">
+      <span id="title">
+        <strong> Make an Arbitrary Song Curative:</strong> Therapeutic Music Transfer for Anxiety Reduction Based on Melody and Accompaniment
+      </span>
+    </nav>
+        <div class="page-title">Figure 3: A demonstration of arbitrary input music,stitched music and transferred music.</div>
+        Fig.3 shows two examples of arbitrary input music (first row), two examples of stitched music (second row), and two examples of transferred music (third row). In this example, Piece 1 is the therapeutic music and Piece 2 is the arbitrarily selected pop music. Pieces 3 and 4 are directly stitched by swapping the melody and accompaniment of Pieces 1 and 2. Pieces 5 and 6 are transferred from Pieces 1 and 2. Piece 5 inherits the main melody of Piece 1 and the characteristics of Piece 2’s accompaniment; Piece 6 inherits the main melody of Piece 2 and the characteristics of Piece 1’s accompaniment. In all examples, the upper and lower part of the staff represent the melody and the accompaniment, respectively.
+        <br>
+        <br>
+       
+        Stitching suffers from two main disadvantages. First, it brings excessive information into music, leading to complexity, redundant musical expression, and chaotic sound. Second, it produces disharmony. Specifically, in original pieces, the accompaniment of each bar creates an implied harmony to support the corresponding melody, which is determined by the compound relationship between multiple tones at the same musical time. However, reassembling melodies and accompaniment without adjustment eliminates such harmonic support, resulting in poor performance. As an example, in the 7-th bar of Piece 3, the accompaniment creates a harmony of the F Major chord using the notes F, A, and C. The melody rings out the pitches G and E at the same time. F and G form the superposition of the major second interval, and F and E form the superposition of the minor second interval; because both intervals sound discordant, the piece evokes a sense of disharmony. 
+        <br>
+        <br>
+        Conversely, in the transferred pieces, the reorganized music produces a pleasant sense of harmony. For instance, in the 5-th bar of Piece 5, the accompaniment and the melody consist of notes F, A, and C. This arrangement produces a consistent harmonious effect. Meanwhile, the generated pieces show satisfactory results in terms of chord progression, rhythmic rationality, and tonal consistency. This example also confirms that it would be unreasonable to generate music via stitching. It is also worth noting that the proposed model does not learn absolute note information of the input music, but is more likely to learn features such as the local density of notes, overall rhythm and progression. In Piece 5 and 6, the relative pitch value of most notes and the melody progression are similar to Piece 1 and 2, but absolute pitch values, note lengths are different, which increases diversity and novelty of the transferred music.
+        <br>
+        <img src="demo/figure3.png" alt="Figure3" style="margin: 0 auto; width:70%; max-height: 100%;" />
+        
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">Input <br> pieces</th>
+                <td class="small"><audio src="demo/piece_1.mp3" controls></audio><br>
+                <strong>Piece 1 (from <i>"Moon River" by Audrey Hepburn</i>)</strong></td>
+                <td class="small"><audio src="demo/piece_2.mp3" controls></audio><br>
+                <strong>Piece 2 (from <i>"Hallelujah" by Leonard Cohen</i>)</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Stitched <br>pieces</th>
+                <td class="small"><audio src="demo/piece_3.mp3" controls></audio><br>
+                  <strong>Piece 3 (melody from Piece 1, accompaniment from Piece 2)</strong></td>
+                <td class="small"><audio src="demo/piece_4.mp3" controls></audio><br>
+                  <strong>Piece 4 (melody from Piece 2, accompaniment from Piece 1)</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Transferred <br>pieces</th>
+                <td class="small"><audio src="demo/piece_5.mp3" controls></audio><br>
+                  <strong>Piece 5 (melody from Piece 1, accompaniment from Piece 2)</strong></td>
+                <td class="small"><audio src="demo/piece_6.mp3" controls></audio><br>
+                  <strong>Piece 6 (melody from Piece 2, accompaniment from Piece 1)</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">The complete <br>input and <br>transferred <br> pieces</th>
+                <td class="small"><audio src="demo/piece_1_complete.mp3" controls></audio><br>
+                  <strong>Piece 1 </strong></td>
+                <td class="small"><audio src="demo/piece_2_complete.mp3" controls></audio><br>
+                  <strong>Piece 2 </strong></td>
+                <td class="small"><audio src="demo/piece_5_complete.mp3" controls></audio><br>
+                  <strong>Piece 5</strong></td>
+                <td class="small"><audio src="demo/piece_6_complete.mp3" controls></audio><br>
+                  <strong>Piece 6</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <div><hr></div>
+        <div class="page-title">Figure 12: Analysis of melody-accompaniment hyper-parameter ω<sub>2</sub>.</div>
+        <p>
+        We demonstrate five music pieces to visualize the effect of melody–accompaniment contribution hyper-parameter $\omega_{2}$. To emphasize this result, ω<sub>1</sub> is set to 1; that is, the melody encoder extracts features solely from x<sub>1</sub>, and the accompaniment encoder extracts features solely from x<sub>2</sub>. Fig.12 shows the transferred results when ω<sub>2</sub> = 0.9, 0.7, 0.5, 0.3, 0.1. All pieces inherit the melody of Piece 1 and the accompaniment of Piece 2 in Fig. 3 to different extents. If ω<sub>2</sub> is large, then the melody of the transferred music is similar to Piece 1. Otherwise, the accompaniment of the transferred music is similar to Piece 2. For example, the melody of the music piece in (a) is similar to Piece 1. The accompaniment is different from Piece 2 apart from certain pitch values. Similarly, the accompaniment of the music piece in (e) is similar to Piece 2. The melody is distinct from Piece 1 except for specific pitch values. In addition, Piece 3 inherits the characteristics of two songs equally. Its melody is similar to Piece 1 in terms of the basic rhythm as well as in features such as the superposition of multiple notes, while its accompaniment is similar to Piece 2 in rhythm and some common notes.
+        <br>
+      </p>
+        <img src="demo/figure12.png" alt="Figure12" style="margin: 0 auto; width:40%; max-height: 100%;" />
+
+        
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.9</th>
+                <td class="small"><audio src="demo/a.mp3" controls></audio><br></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.7</th>
+                <td class="small"><audio src="demo/b.mp3" controls></audio><br></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.5</th>
+                <td class="small"><audio src="demo/c.mp3" controls></audio><br></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.3</th>
+                <td class="small"><audio src="demo/d.mp3" controls></audio><br></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.1</th>
+                <td class="small"><audio src="demo/e.mp3" controls></audio><br></td>
+              </tr>
+            </tbody>
+          </table>
+        
+    </body>
+</html>
