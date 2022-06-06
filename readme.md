@@ -7,14 +7,23 @@ This document is designed to assist with reading supplementary materials of the 
 We shows a list of therapeutic music that is mentioned in [1] and is adopted in this paper.
 
 • Moon River (Henry Mancini)
+
 • Watermark (Enya Patricia Brennan)
+
 • Carmen Suite No.1, Intermezzo (George Bizet)
+
 • Morning Mood (Edvard Grieg)
+
 • Eine kleine Nachtmusik (Wolfgang Amadeus Mozart)
+
 • The Swan (Saint-Saens)
+
 • Pie Jesu (Gabriel Fauré)
+
 • Piano Concerto No.21, K.467 - 2nd movement (Wolfgang Amadeus Mozart)
+
 • Clarinet Concerto in A major, K.622 - 2nd movement (Wolfgang Amadeus Mozart)
+
 • Gabriel’s Message (Basque Folk Carol)
 
 
