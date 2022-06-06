@@ -1,9 +1,9 @@
-Make an Arbitrary Song Curative: Therapeutic Music Transfer for Anxiety Reduction Based on Melody and Accompaniment: supplementary document
+# Make an Arbitrary Song Curative: Therapeutic Music Transfer for Anxiety Reduction Based on Melody and Accompaniment: supplementary document
 
 
 This document is designed to assist with reading supplementary materials of the paper “Make an Arbitrary Song Curative: Therapeutic Music Transfer for Anxiety Reduction Based on Melody and Accompaniment”. In this document, we describe therapeutic music used in our experiment. Moreover, we demonstrate that the proposed model can generate therapeutic music based on the input music.
 
-1. THERAPEUTIC MUSIC LIST
+## 1. THERAPEUTIC MUSIC LIST
 We shows a list of therapeutic music that is mentioned in [1] and is adopted in this paper.
 
 • Moon River (Henry Mancini)
@@ -18,17 +18,17 @@ We shows a list of therapeutic music that is mentioned in [1] and is adopted in 
 • Gabriel’s Message (Basque Folk Carol)
 
 
-2. MUSIC DEMONSTRATION
+## 2. MUSIC DEMONSTRATION
 We demonstrate two music examples from Fig. 3 and Fig. 12. In the first demonstration, we show original music examples, stitched music examples and transferred music examples. In the second
 demonstration, we show that music transferred by different melody-accompaniment weights brings different feelings. 
 
 There are two ways to read the demo website: 
-1. Please refer to: https://htmlpreview.github.io/, and enter https://github.com/zhejinghu/TMT/blob/main/demo.html.
-2. Clone all documents and open demo.html on your local device.
+### 1. Please refer to: https://htmlpreview.github.io/, and enter https://github.com/zhejinghu/TMT/blob/main/demo.html.
+### 2. Clone all documents and open demo.html on your local device.
 
 
 
 
 
-REFERENCES
+## REFERENCES
 1. D. Grocke and T. Wigram, Receptive methods in music therapy: Techniques and clinical applications for music therapy clinicians, educators and students (Jessica Kingsley Publishers, 2006).
