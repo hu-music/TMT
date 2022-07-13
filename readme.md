@@ -1,7 +1,6 @@
-# Make an Arbitrary Song Curative: Therapeutic Music Transfer for Anxiety Reduction Based on Melody and Accompaniment: supplementary document
+# Make a Song Curative: A Spatio-temporal Music Transfer Model for Anxiety Reduction Based on Melody and Accompaniment: supplementary document
 
-
-This document is designed to assist with reading supplementary materials of the paper “Make an Arbitrary Song Curative: Therapeutic Music Transfer for Anxiety Reduction Based on Melody and Accompaniment”. In this document, we describe therapeutic music used in our experiment. Moreover, we demonstrate that the proposed model can generate therapeutic music based on the input music.
+This document is designed to assist with reading supplementary materials of the paper “Make a Song Curative: A Spatio-temporal Music Transfer Model for Anxiety Reduction Based on Melody and Accompaniment: supplementary document”. In this document, we describe therapeutic music used in our experiment. Moreover, we demonstrate that the proposed model can generate therapeutic music based on the input music.
 
 ## 1. THERAPEUTIC MUSIC LIST
 We shows a list of therapeutic music that is mentioned in [1] and is adopted in this paper.
