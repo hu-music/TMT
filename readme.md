@@ -27,7 +27,7 @@ We shows a list of therapeutic music that is mentioned in [1] and is adopted in 
 
 
 ## 2. MUSIC DEMONSTRATION
-We demonstrate two music examples from Fig. 3 and Fig. 12. In the first demonstration, we show original music examples, stitched music examples and transferred music examples. In the second
+We demonstrate two music examples from Fig. 3 and Fig. 13. In the first demonstration, we show original music examples, stitched music examples and transferred music examples. In the second
 demonstration, we show that music transferred by different melody-accompaniment weights brings different feelings. 
 
 There are two ways to read the demo website: 
