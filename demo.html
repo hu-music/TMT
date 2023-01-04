@@ -40,10 +40,10 @@
   <body>
     <nav class="navbar sticky-top navbar-expand navbar-light bg-light border-bottom">
       <span id="title">
-        <strong> Make a Song Curative: </strong> A Spatio-temporal Music Transfer Model for Anxiety Reduction Based on Melody and Accompaniment
+        <strong> Make a Song Curative: </strong> A Spatio-temporal Therapeutic Music Transfer Model for Anxiety Reduction
     </nav>
-        <div class="page-title">Figure 3: A demonstration of arbitrary input music,stitched music and transferred music.</div>
-        Fig.3 shows two examples of arbitrary input music (first row), two examples of stitched music (second row), and two examples of transferred music (third row). In this example, Piece 1 is the therapeutic music and Piece 2 is the arbitrarily selected pop music. Pieces 3 and 4 are directly stitched by swapping the melody and accompaniment of Pieces 1 and 2. Pieces 5 and 6 are transferred from Pieces 1 and 2. Piece 5 inherits the main melody of Piece 1 and the characteristics of Piece 2’s accompaniment; Piece 6 inherits the main melody of Piece 2 and the characteristics of Piece 1’s accompaniment. In all examples, the upper and lower part of the staff represent the melody and the accompaniment, respectively.
+        <div class="page-title">Figure S2: A demonstration of arbitrary input music,stitched music and transferred music.</div>
+        Fig.S2 shows two examples of arbitrary input music (first row), two examples of stitched music (second row), and two examples of transferred music (third row). In this example, Piece 1 is the therapeutic music and Piece 2 is the arbitrarily selected pop music. Pieces 3 and 4 are directly stitched by swapping the melody and accompaniment of Pieces 1 and 2. Pieces 5 and 6 are transferred from Pieces 1 and 2. Piece 5 inherits the main melody of Piece 1 and the characteristics of Piece 2’s accompaniment; Piece 6 inherits the main melody of Piece 2 and the characteristics of Piece 1’s accompaniment. In all examples, the upper and lower part of the staff represent the melody and the accompaniment, respectively.
         <br>
         <br>
        
@@ -92,38 +92,7 @@
           </table>
         
           <div><hr></div>
-        <div class="page-title">Figure 13: Analysis of melody-accompaniment hyper-parameter ω<sub>2</sub>.</div>
-        <p>
-        We demonstrate five music pieces to visualize the effect of melody–accompaniment contribution hyper-parameter $\omega_{2}$. To emphasize this result, ω<sub>1</sub> is set to 1; that is, the melody encoder extracts features solely from x<sub>1</sub>, and the accompaniment encoder extracts features solely from x<sub>2</sub>. Fig.12 shows the transferred results when ω<sub>2</sub> = 0.9, 0.7, 0.5, 0.3, 0.1. All pieces inherit the melody of Piece 1 and the accompaniment of Piece 2 in Fig. 3 to different extents. If ω<sub>2</sub> is large, then the melody of the transferred music is similar to Piece 1. Otherwise, the accompaniment of the transferred music is similar to Piece 2. For example, the melody of the music piece in (a) is similar to Piece 1. The accompaniment is different from Piece 2 apart from certain pitch values. Similarly, the accompaniment of the music piece in (e) is similar to Piece 2. The melody is distinct from Piece 1 except for specific pitch values. In addition, Piece 3 inherits the characteristics of two songs equally. Its melody is similar to Piece 1 in terms of the basic rhythm as well as in features such as the superposition of multiple notes, while its accompaniment is similar to Piece 2 in rhythm and some common notes.
-        <br>
-      </p>
-        <img src="demo/figure12.png" alt="Figure13" style="margin: 0 auto; width:40%; max-height: 100%;" />
-
         
-          <table class="table">
-            <tbody>
-              <tr>
-                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.9</th>
-                <td class="small"><audio src="demo/fig12_a.mp3" controls></audio><br></td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.7</th>
-                <td class="small"><audio src="demo/fig12_b.mp3" controls></audio><br></td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.5</th>
-                <td class="small"><audio src="demo/fig12_c.mp3" controls></audio><br></td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.3</th>
-                <td class="small"><audio src="demo/fig12_d.mp3" controls></audio><br></td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">ω<sub>2</sub>=0.1</th>
-                <td class="small"><audio src="demo/fig12_e.mp3" controls></audio><br></td>
-              </tr>
-            </tbody>
-          </table>
         
     </body>
 </html>
